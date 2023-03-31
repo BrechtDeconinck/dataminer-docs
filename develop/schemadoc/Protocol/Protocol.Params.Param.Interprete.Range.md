@@ -24,5 +24,7 @@ By adding a range to the Protocol.Params.Param.Interprete tag, a value outside t
 
 > [!NOTE]
 >
+> - It's recommended to only use the Range tag for communication parameters (i.e. SNMP parameter).
+    When a successful response was received, but the value is out of the interprete specified range, the value will not be set to the parameter (leaving it on it's previous value or not-intialized).
 > - The Range tag can also be used to specify a value range in case of a simulated element.
 > - From a QAction, it is possible to set a value that is outside of this range.
